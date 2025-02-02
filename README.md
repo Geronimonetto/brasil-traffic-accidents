@@ -36,6 +36,16 @@ Aqui está um minitexto com os comandos que você pode usar para criar, ativar e
    pip install -r requirements.txt
    ```
 
-Agora seu ambiente está pronto para rodar o projeto!
+4. **Extrair o arquivo `.gpkg`:**
 
----
+   O projeto utiliza o arquivo `bcim_2016_21_11_2018.gpkg`, que está comprimido em 5 partes dentro da pasta `utils`. Para rodar o código corretamente, você precisará extrair esse arquivo antes de executar o projeto.
+
+   Para extrair, execute o seguinte comando dentro do diretório `utils`:
+
+   ```bash
+   cat bcim_2016_21_11_2018.gpkg.part1 bcim_2016_21_11_2018.gpkg.part2 bcim_2016_21_11_2018.gpkg.part3 bcim_2016_21_11_2018.gpkg.part4 bcim_2016_21_11_2018.gpkg.part5 > bcim_2016_21_11_2018.gpkg
+   ```
+
+   Após a extração, o arquivo `bcim_2016_21_11_2018.gpkg` estará pronto para ser usado no projeto.
+
+Agora seu ambiente está pronto para rodar o projeto!
